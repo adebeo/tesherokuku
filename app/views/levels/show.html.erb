@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @level.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @level.description %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @level.order %>
+</p>
+
+<%= link_to 'Edit', edit_program_level_path(@program,@level) %> |
+<%= link_to 'Back', program_levels_path %>

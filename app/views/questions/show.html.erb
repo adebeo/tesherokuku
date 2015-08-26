@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @question.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @question.description %>
+</p>
+
+<p>
+  <strong>Lien:</strong>
+  <%= @question.lien %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @question.order %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @question.level_id %>
+</p>
+
+<%= link_to 'Edit', edit_program_level_question_path(@program,@level,@question) %> |
+<%= link_to 'Back', program_level_questions_path %>

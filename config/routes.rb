@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  resources :questions
+  resources :programs do
+    resources :levels do
+      resources :videos      
+      resources :questions 
+    end
+  end
+
   root 'home#index'
   
   get 'home/profile'
